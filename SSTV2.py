@@ -3,7 +3,7 @@ from PIL import Image
 from pysstv.color import Robot36
 import numpy as np
 
-def encode_image_to_sstv(image_path, output_path):
+def encodeToSSTV(image_path, output_path):
     # Load image
     image = Image.open(image_path)
     
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     output_wav = "output_sstv.wav"
     
     # Encode image to SSTV
-    encode_image_to_sstv(input_image, output_wav)
+    encodeToSSTV(input_image, output_wav)
